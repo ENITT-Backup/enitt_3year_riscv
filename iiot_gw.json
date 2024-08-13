@@ -1,9 +1,118 @@
 {
-	"base_ed_info":
+	"system_info":
 	{
-		"base_ed_addr":"0xE0000000",
-		"base_ed_cnt":"100"
+		"eth_use":"0",
+		"ip":"0.0.0.0"
 	},
+
+	"lpwa_uart_info":
+	{
+		"use":"1",
+		"read_msec":"1", "comment":"uart read time in msec",
+		"uart_info":
+		[
+			{
+				"gw_addr":"0xACC20000",
+				"dev_name":"/dev/ttyS2",
+				"dl_buff_size":"10"
+			}
+		]
+	},
+
+	"lpwa_uart_info_orig":
+	{
+		"use":"1",
+		"read_msec":"1", "comment":"uart read time in msec",
+		"uart_info":
+		[
+			{
+				"gw_addr":"0xACC20000",
+				"dev_name":"/dev/ttyS1",
+				"dl_buff_size":"10"
+			}
+		]
+	},
+
+	"lpwa_ed_info":
+	{
+		"base_ed_addr":"0xAAC10000",
+		"ed_cnt":"16"
+	},
+
+	"uart_eth_info":
+	{
+		"use":"0",
+		"dev_name":"/dev/ttyS4",
+		"read_msec":"1", "comment":"uart read time in msec",
+		"ip":"192.168.88.1",
+		"port":"12401"
+	},
+
+	"uart_eth_info_2nd":
+	{
+		"use":"0",
+		"dev_name":"/dev/ttyS4",
+		"read_msec":"1", "comment":"uart read time in msec",
+		"ip":"192.168.88.2",
+		"port":"12402"
+	},
+
+	"uart_modbus_info":
+	{
+		"read_msec":"1", "comment":"uart read time in msec",
+		"uart_info":
+		[
+			{
+				"use":"0",
+				"dev_name":"/dev/ttyUSB0",
+				"baud_rate":"80000",
+				"baud_rate_1":"115200",
+				"baud_rate_2":"150000"
+			},
+			{
+				"use":"0",
+				"dev_name":"/dev/ttyUSB1",
+				"baud_rate":"80000",
+				"baud_rate_1":"115200",
+				"baud_rate_2":"150000"
+			}
+		]
+	},
+
+	"modbus_slave_info":
+	[
+		{
+			"id":"0xAAC10010"
+		},
+		{
+			"id":"0xAAC10011"
+		}
+	],
+
+	"uart_wifi_info":
+	{
+		"use":"0",
+		"dev_name":"/dev/ttyS5",
+		"read_msec":"1", "comment":"uart read time in msec",
+		"gw_addr":"0xACC20000",
+		"gw_ip":"192.168.88.1",
+		"port":"12345"
+	},
+
+	"wifi_slave_info":
+	[
+		{
+			"id":"0xAAC10020",
+			"ip":"192.168.88.32",
+			"port":"12345"
+		},
+		{
+			"id":"0xAAC10021",
+			"ip":"192.168.88.33",
+			"port":"12345"
+		}
+	],
+
 	"gw_info":
 	{
 		"gw_eui":"0xA2AAAA810000AA00"
@@ -12,14 +121,6 @@
 	{
 		"ns_eui":"0x0101000000000000"
 	},
-	"uart_info":
-	[
-		{
-			"gw_addr":"0xF000AA00",
-			"dev_name_1":"/dev/ttyUSB1",
-			"dev_name":"/dev/ttyS2"
-		}
-	],
 	"rp_info":
 	{
 		"ip":"127.0.0.1",
@@ -28,12 +129,13 @@
 	},
 	"gw_hub_info":
 	{
-		"gwmp_keep_alive_max_retry_cnt":"5",
-		"gwmp_keep_alive_duration_in_sec":"3",
-		"gwmp_dst_ip":"127.0.0.1",
-		"gwmp_dst_port":"12300",
-		"gwmp_src_ip":"127.0.0.1",
-		"gwmp_src_port":"12301"
+		"dst_ip":"172.17.0.1",
+		"dst_port":"12400",
+		"src_ip":"0.0.0.0",
+		"src_port":"12402",
+		"sleep_time_in_min":"5",
+		"modbus_report_in_min":"1",
+		"wifi_report_in_min":"1"
 	},
 	"debug_info":
 	{

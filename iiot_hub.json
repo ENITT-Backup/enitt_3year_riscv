@@ -1,0 +1,73 @@
+{
+	"ns_info":
+	[
+		{
+			"ns_eui":"0xA2AAAA0200000001","comment":"cctv",
+			"bsmp_ns_ip":"115.92.83.242",
+			"bsmp_ns_port":"11023"
+		}
+	],
+	"as_info":
+	{
+		"net_dev_name":"eno1",
+		"as_eui":"0xA2AAAA0300000001", "comment":"cctv",
+		"bsmp_as_ip":"0.0.0.0",
+		"bsmp_as_port":"11022",
+		"bsmp_ka_idle_sec":"30",
+		"bsmp_ka_time_sec":"10",
+		"bsmp_ka_max_retry_cnt":"3",
+		"apmp_as_ip":"0.0.0.0",
+		"apmp_as_port":"12400",
+		"dbg_ip":"0.0.0.0",
+		"dbg_port":"22421",
+		"recover_data_1":"1",
+		"recover_data":"0",
+		"db_control_read_duration_in_sec":"3",
+		"db_control_read_duration_in_sec_1":"0",
+		"apmp_gw_port":"12401",
+		"null":"null"
+	},
+	"atc_db_info":
+	{
+		"host":"115.92.83.241",
+		"port":"16033",
+		"db_name":"iiot",
+		"user":"Airpoint1",
+		"pass":"airpoint5460!",
+		"time_margin":"3600", "comment":"margin for between collection_time and current",
+		"db_save":"1"
+	},
+	"iiot_db_info":
+	{
+		"host":"115.92.83.241",
+		"port":"16033",
+		"db_name":"iiot",
+		"user":"Airpoint1",
+		"pass":"airpoint5460!",
+		"time_margin":"3600", "comment":"margin for between collection_time and current",
+		"db_save":"0"
+	},
+	"read_db_info":
+	{
+		"host":"115.92.83.242",
+		"port":"16033",
+		"db_name":"djsc_net",
+		"user":"Airpoint1",
+		"pass":"airpoint5460!",
+		"time_margin":"3600", "comment":"margin for between collection_time and current"
+	},
+	"write_db_info":
+	{
+		"host":"115.92.83.241",
+		"port":"16033",
+		"db_name_1":"airpoint_app",
+		"db_name":"djsc_app",
+		"user":"Airpoint1",
+		"pass":"airpoint5460!",
+		"time_margin":"3600", "comment":"margin for between collection_time and current"
+	},
+	"debug_info":
+	{
+		"print_level":"5"
+	}
+}
