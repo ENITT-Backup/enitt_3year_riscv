@@ -9,4 +9,4 @@ COPY ./command.sh /usr/local/bin/command.sh
 
 ENTRYPOINT ["/bin/bash"]
 
-CMD ["command.sh"]
+#CMD ["command.sh"]
